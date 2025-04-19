@@ -17,39 +17,8 @@
     },
     {
       "id": 4,
-      "name": "Johnnn Doe",
-      "email": "Johnn@gmail.com",
-      "password": "123456"
-    },
-    {
-      "id": 5,
-      "name": "Johnnn2 Doe2",
-      "email": "Johnn2@gmail.com",
-      "password": "$2b$13$sW3Xuh.6EJvxa8Hf4a8FN.rSHVQ0hV91CTFu2PpeNhudNrX6zoWGe"
-    },
-    {
-      "id": 6,
-      "name": "Johnnn Doeeee",
-      "email": "Johnn22@gmail.com",
-      "password": "$2b$13$WlLNGjm4iX5foz9LEWXV7uw/YoCYG65ATdqNF9c3GMBFlLQ3peo5e"
-    },
-    {
-      "id": 7,
-      "name": "Johnnn Doeeee",
-      "email": "Johnn22@gmail.com",
-      "password": "$2b$13$8IXsXaTvjdcJsdSMM6A1c.Ps9FwBKqHVKW8YZXL./6LXozdYpNyvq"
-    },
-    {
-      "id": 8,
-      "name": "Johnnn Doeeee",
-      "email": "Johnn23@gmail.com",
-      "password": "$2b$13$cOPswhf36W.yZvRNDihNbuDXeBOmxLL4PrWgMsdnAzMDdGwjEAx7y"
-    },
-    {
-      "id": 9,
-      "name": "Johnnn Doeeee",
-      "email": "Johnn24@gmail.com",
-      "password": "$2b$13$DZEY10VEyfz4bexkxjCmBeLeWXFfSGYJMRo3vF7X8DAK4xfrtzB6e"
+      "name": "John doe",
+      "email": "doe@gmail.com"
     }
   ]
 }

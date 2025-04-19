@@ -4,6 +4,7 @@ const path = require("path");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 const verifyToken = require("./middlewares/authMiddleware");
+ // Import the router
 
 const app = express();
 app.use(express.json());
@@ -29,6 +30,9 @@ async function writeDB(data) {
     console.error("Error writing to database:", err);
   }
 }
+const routes = require('./authentication');
+
+app.use('/api', routes);
 
 app.get("/users", async (req, res) => {
   try {
@@ -41,23 +45,7 @@ app.get("/users", async (req, res) => {
 
 // POST METHOD
 // POST (Create) a new user
-app.post("/users", async (req, res) => {
-  try {
-    const db = await readDB();
-    const newUser = {
-      id: db.users.length > 0 ? Math.max(...db.users.map((u) => u.id)) + 1 : 1,
-      name: req.body.name,
-      email: req.body.email,
-    };
 
-    db.users.push(newUser);
-    await writeDB(db);
-
-    res.status(201).json(newUser);
-  } catch (err) {
-    res.status(500).json({ error: "Failed to create user" });
-  }
-});
 
 //   PUT METHOD
 // PUT (Update) an existing user
